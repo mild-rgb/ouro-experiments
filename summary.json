@@ -1,0 +1,61 @@
+{
+  "model": "ByteDance/Ouro-1.4B-Thinking",
+  "date": "2026-09-20",
+  "hardware": "Tesla T4",
+  "dtype": "float16",
+  "transformers": "4.54.1",
+  "generation": {
+    "do_sample": true,
+    "temperature": 1.0,
+    "top_p": 0.7,
+    "math_max_new_tokens": 1024,
+    "code_max_new_tokens": 1536
+  },
+  "config": {
+    "hidden_size": 2048,
+    "intermediate_size": 5632,
+    "num_layers": 24,
+    "total_ut_steps": 4,
+    "heads": 16,
+    "kv_heads": 16,
+    "head_dim": 128,
+    "early_exit_threshold": 1.0
+  },
+  "gsm8k": {
+    "n": 24,
+    "correct": 16,
+    "truncated": 8,
+    "prompt_tokens": 2518,
+    "gen_tokens": 15310,
+    "seconds": 429.75588488578796,
+    "batches": 3
+  },
+  "mbpp": {
+    "n": 16,
+    "passed": 9,
+    "no_code_block": 7,
+    "prompt_tokens": 3682,
+    "gen_tokens": 16652,
+    "seconds": 936.1631052494049,
+    "batches": 4
+  },
+  "activation_bytes_per_token_fp16": {
+    "A  residual stream only (layer output)": 393216,
+    "B  + attention q,k,v and attn output": 1572864,
+    "C  + MLP gate, up, act(gate)*up": 4816896,
+    "D  + the two RMSNorm outputs": 5603328
+  },
+  "measured_module_output_bytes_per_token": {
+    "Embedding": 4096.0,
+    "OuroRotaryEmbedding": 512.0,
+    "OuroRMSNorm": 1589248.0,
+    "Linear": 4227080.0,
+    "OuroAttention": 393216.0,
+    "SiLU": 1081344.0,
+    "OuroMLP": 393216.0,
+    "OuroDecoderLayer": 393216.0,
+    "OuroModel": 16392.0,
+    "OuroForCausalLM": 0.0
+  },
+  "decoder_layer_calls_per_forward": 96
+}

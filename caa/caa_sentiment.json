@@ -1,0 +1,557 @@
+{
+ "behavior": "sentiment",
+ "baseline_p": 0.781276834383607,
+ "n_test": 80,
+ "n_pairs": 480,
+ "pos": [
+  "wonderful",
+  "great",
+  "amazing",
+  "excellent",
+  "fantastic",
+  "delightful",
+  "lovely",
+  "superb",
+  "brilliant",
+  "perfect",
+  "good",
+  "awesome",
+  "incredible",
+  "pleasant",
+  "enjoyable"
+ ],
+ "neg": [
+  "terrible",
+  "awful",
+  "horrible",
+  "disappointing",
+  "dreadful",
+  "bad",
+  "poor",
+  "boring",
+  "miserable",
+  "frustrating",
+  "painful",
+  "unpleasant"
+ ],
+ "vector_norms": {
+  "after6_L1": 1.798976182937622,
+  "after6_L2": 2.8456380367279053,
+  "after6_L3": 3.743590831756592,
+  "after6_L4": 3.999891996383667,
+  "after12_L1": 2.9260616302490234,
+  "after12_L2": 4.322913646697998,
+  "after12_L3": 4.920364856719971,
+  "after12_L4": 4.996398448944092,
+  "after18_L1": 3.724989175796509,
+  "after18_L2": 5.204861640930176,
+  "after18_L3": 5.816658973693848,
+  "after18_L4": 5.898291110992432
+ },
+ "resid_norms": {
+  "after6_L1": 3.8326197544733684,
+  "after6_L2": 6.318759822845459,
+  "after6_L3": 7.778503115971883,
+  "after6_L4": 8.25321299235026,
+  "after12_L1": 6.0964259306589765,
+  "after12_L2": 8.768927574157715,
+  "after12_L3": 10.16673272450765,
+  "after12_L4": 10.543523248036703,
+  "after18_L1": 8.333278322219849,
+  "after18_L2": 11.303302796681722,
+  "after18_L3": 12.912939198811848,
+  "after18_L4": 13.196702353159587
+ },
+ "results": [
+  {
+   "point": 6,
+   "inject": "L1",
+   "vector": "same-loop",
+   "mult": -2,
+   "p": 0.5437890688888729
+  },
+  {
+   "point": 6,
+   "inject": "L1",
+   "vector": "same-loop",
+   "mult": -1,
+   "p": 0.6161639926955104
+  },
+  {
+   "point": 6,
+   "inject": "L1",
+   "vector": "same-loop",
+   "mult": 1,
+   "p": 0.9492700412869454
+  },
+  {
+   "point": 6,
+   "inject": "L1",
+   "vector": "same-loop",
+   "mult": 2,
+   "p": 0.9648115828633308
+  },
+  {
+   "point": 6,
+   "inject": "L2",
+   "vector": "same-loop",
+   "mult": -2,
+   "p": 0.34940476464107634
+  },
+  {
+   "point": 6,
+   "inject": "L2",
+   "vector": "same-loop",
+   "mult": -1,
+   "p": 0.49959216080605984
+  },
+  {
+   "point": 6,
+   "inject": "L2",
+   "vector": "same-loop",
+   "mult": 1,
+   "p": 0.926789217442274
+  },
+  {
+   "point": 6,
+   "inject": "L2",
+   "vector": "same-loop",
+   "mult": 2,
+   "p": 0.9824368394911289
+  },
+  {
+   "point": 6,
+   "inject": "L3",
+   "vector": "same-loop",
+   "mult": -2,
+   "p": 0.20264935058075934
+  },
+  {
+   "point": 6,
+   "inject": "L3",
+   "vector": "same-loop",
+   "mult": -1,
+   "p": 0.2972919587977231
+  },
+  {
+   "point": 6,
+   "inject": "L3",
+   "vector": "same-loop",
+   "mult": 1,
+   "p": 0.9762003995478153
+  },
+  {
+   "point": 6,
+   "inject": "L3",
+   "vector": "same-loop",
+   "mult": 2,
+   "p": 0.9971937797963619
+  },
+  {
+   "point": 6,
+   "inject": "L4",
+   "vector": "same-loop",
+   "mult": -2,
+   "p": 0.017056903670891188
+  },
+  {
+   "point": 6,
+   "inject": "L4",
+   "vector": "same-loop",
+   "mult": -1,
+   "p": 0.0774941353709437
+  },
+  {
+   "point": 6,
+   "inject": "L4",
+   "vector": "same-loop",
+   "mult": 1,
+   "p": 0.9982572101056576
+  },
+  {
+   "point": 6,
+   "inject": "L4",
+   "vector": "same-loop",
+   "mult": 2,
+   "p": 0.9998573400080204
+  },
+  {
+   "point": 6,
+   "inject": "all",
+   "vector": "same-loop",
+   "mult": -2,
+   "p": 0.012866491643944756
+  },
+  {
+   "point": 6,
+   "inject": "all",
+   "vector": "same-loop",
+   "mult": -1,
+   "p": 0.09438162540318444
+  },
+  {
+   "point": 6,
+   "inject": "all",
+   "vector": "same-loop",
+   "mult": 1,
+   "p": 0.9998278185725212
+  },
+  {
+   "point": 6,
+   "inject": "all",
+   "vector": "same-loop",
+   "mult": 2,
+   "p": 0.9983387276530266
+  },
+  {
+   "point": 12,
+   "inject": "L1",
+   "vector": "same-loop",
+   "mult": -2,
+   "p": 0.453132988139987
+  },
+  {
+   "point": 12,
+   "inject": "L1",
+   "vector": "same-loop",
+   "mult": -1,
+   "p": 0.5886500766500831
+  },
+  {
+   "point": 12,
+   "inject": "L1",
+   "vector": "same-loop",
+   "mult": 1,
+   "p": 0.9541783519089222
+  },
+  {
+   "point": 12,
+   "inject": "L1",
+   "vector": "same-loop",
+   "mult": 2,
+   "p": 0.9751552872359752
+  },
+  {
+   "point": 12,
+   "inject": "L2",
+   "vector": "same-loop",
+   "mult": -2,
+   "p": 0.33662436008453367
+  },
+  {
+   "point": 12,
+   "inject": "L2",
+   "vector": "same-loop",
+   "mult": -1,
+   "p": 0.40522683393210174
+  },
+  {
+   "point": 12,
+   "inject": "L2",
+   "vector": "same-loop",
+   "mult": 1,
+   "p": 0.9671761885285377
+  },
+  {
+   "point": 12,
+   "inject": "L2",
+   "vector": "same-loop",
+   "mult": 2,
+   "p": 0.9930281281471253
+  },
+  {
+   "point": 12,
+   "inject": "L3",
+   "vector": "same-loop",
+   "mult": -2,
+   "p": 0.21345678665675222
+  },
+  {
+   "point": 12,
+   "inject": "L3",
+   "vector": "same-loop",
+   "mult": -1,
+   "p": 0.19284847034141422
+  },
+  {
+   "point": 12,
+   "inject": "L3",
+   "vector": "same-loop",
+   "mult": 1,
+   "p": 0.9941724248230457
+  },
+  {
+   "point": 12,
+   "inject": "L3",
+   "vector": "same-loop",
+   "mult": 2,
+   "p": 0.9984744660556316
+  },
+  {
+   "point": 12,
+   "inject": "L4",
+   "vector": "same-loop",
+   "mult": -2,
+   "p": 0.010863018725649454
+  },
+  {
+   "point": 12,
+   "inject": "L4",
+   "vector": "same-loop",
+   "mult": -1,
+   "p": 0.027466440881835297
+  },
+  {
+   "point": 12,
+   "inject": "L4",
+   "vector": "same-loop",
+   "mult": 1,
+   "p": 0.9990712724626064
+  },
+  {
+   "point": 12,
+   "inject": "L4",
+   "vector": "same-loop",
+   "mult": 2,
+   "p": 0.9982256099581719
+  },
+  {
+   "point": 12,
+   "inject": "all",
+   "vector": "same-loop",
+   "mult": -2,
+   "p": 0.12113508991897107
+  },
+  {
+   "point": 12,
+   "inject": "all",
+   "vector": "same-loop",
+   "mult": -1,
+   "p": 0.03390191290527582
+  },
+  {
+   "point": 12,
+   "inject": "all",
+   "vector": "same-loop",
+   "mult": 1,
+   "p": 0.9982381805777549
+  },
+  {
+   "point": 12,
+   "inject": "all",
+   "vector": "same-loop",
+   "mult": 2,
+   "p": 0.9803600780665874
+  },
+  {
+   "point": 18,
+   "inject": "L1",
+   "vector": "same-loop",
+   "mult": -2,
+   "p": 0.43669668240472675
+  },
+  {
+   "point": 18,
+   "inject": "L1",
+   "vector": "same-loop",
+   "mult": -1,
+   "p": 0.6025188175961376
+  },
+  {
+   "point": 18,
+   "inject": "L1",
+   "vector": "same-loop",
+   "mult": 1,
+   "p": 0.9250897362828254
+  },
+  {
+   "point": 18,
+   "inject": "L1",
+   "vector": "same-loop",
+   "mult": 2,
+   "p": 0.9504910469055176
+  },
+  {
+   "point": 18,
+   "inject": "L2",
+   "vector": "same-loop",
+   "mult": -2,
+   "p": 0.35198589018546045
+  },
+  {
+   "point": 18,
+   "inject": "L2",
+   "vector": "same-loop",
+   "mult": -1,
+   "p": 0.42504336424171923
+  },
+  {
+   "point": 18,
+   "inject": "L2",
+   "vector": "same-loop",
+   "mult": 1,
+   "p": 0.9497084960341453
+  },
+  {
+   "point": 18,
+   "inject": "L2",
+   "vector": "same-loop",
+   "mult": 2,
+   "p": 0.9909729845821857
+  },
+  {
+   "point": 18,
+   "inject": "L3",
+   "vector": "same-loop",
+   "mult": -2,
+   "p": 0.14351532307919115
+  },
+  {
+   "point": 18,
+   "inject": "L3",
+   "vector": "same-loop",
+   "mult": -1,
+   "p": 0.16860388657078146
+  },
+  {
+   "point": 18,
+   "inject": "L3",
+   "vector": "same-loop",
+   "mult": 1,
+   "p": 0.991020905226469
+  },
+  {
+   "point": 18,
+   "inject": "L3",
+   "vector": "same-loop",
+   "mult": 2,
+   "p": 0.9982166945934295
+  },
+  {
+   "point": 18,
+   "inject": "L4",
+   "vector": "same-loop",
+   "mult": -2,
+   "p": 0.003415709964610869
+  },
+  {
+   "point": 18,
+   "inject": "L4",
+   "vector": "same-loop",
+   "mult": -1,
+   "p": 0.0675649605691433
+  },
+  {
+   "point": 18,
+   "inject": "L4",
+   "vector": "same-loop",
+   "mult": 1,
+   "p": 0.9986269399523735
+  },
+  {
+   "point": 18,
+   "inject": "L4",
+   "vector": "same-loop",
+   "mult": 2,
+   "p": 0.9999817706644535
+  },
+  {
+   "point": 18,
+   "inject": "all",
+   "vector": "same-loop",
+   "mult": -2,
+   "p": 0.01316404435201548
+  },
+  {
+   "point": 18,
+   "inject": "all",
+   "vector": "same-loop",
+   "mult": -1,
+   "p": 0.0071616629720665514
+  },
+  {
+   "point": 18,
+   "inject": "all",
+   "vector": "same-loop",
+   "mult": 1,
+   "p": 0.9999919883906842
+  },
+  {
+   "point": 18,
+   "inject": "all",
+   "vector": "same-loop",
+   "mult": 2,
+   "p": 0.9999988362193107
+  },
+  {
+   "point": 12,
+   "inject": "L4",
+   "vector": "from L1",
+   "mult": -2,
+   "p": 0.023936503409640864
+  },
+  {
+   "point": 12,
+   "inject": "L4",
+   "vector": "from L1",
+   "mult": 2,
+   "p": 0.9990679606795311
+  },
+  {
+   "point": 12,
+   "inject": "L1",
+   "vector": "from L4",
+   "mult": -2,
+   "p": 0.2879815371707082
+  },
+  {
+   "point": 12,
+   "inject": "L1",
+   "vector": "from L4",
+   "mult": 2,
+   "p": 0.9940451376140118
+  },
+  {
+   "point": 12,
+   "inject": "L2",
+   "vector": "from L1",
+   "mult": -2,
+   "p": 0.3555192918516695
+  },
+  {
+   "point": 12,
+   "inject": "L2",
+   "vector": "from L1",
+   "mult": 2,
+   "p": 0.9818293772637844
+  },
+  {
+   "point": 12,
+   "inject": "L4",
+   "vector": "from L3",
+   "mult": -2,
+   "p": 0.011492057799478062
+  },
+  {
+   "point": 12,
+   "inject": "L4",
+   "vector": "from L3",
+   "mult": 2,
+   "p": 0.9973180577158928
+  },
+  {
+   "point": 12,
+   "inject": "all",
+   "vector": "random",
+   "mult": -2,
+   "p": 0.36744393669068814
+  },
+  {
+   "point": 12,
+   "inject": "all",
+   "vector": "random",
+   "mult": 2,
+   "p": 0.9164240092039109
+  }
+ ]
+}
