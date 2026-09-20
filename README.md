@@ -82,3 +82,13 @@ Findings: steering works; the effect grows monotonically with the injection loop
 loops share a direction (cosine 0.8-1.0). The loop is only weakly contractive (a random perturbation keeps ~half its norm after
 three loops); it carries and even amplifies syntactic pushes (tense, number), rotates lexical pushes (sentiment, category) off
 their direction at ~1/3 per loop, and digit magnitude barely steers at all.
+
+## Steering self-detection (`steer_detect/`)
+
+48 prompts x 7 conditions (natural, tone-prompted negative/positive, CAA-steered sentiment negative/positive, steered
+past tense, steered animals; loop-4 injection after 12 layers at 20% of residual norm), 60 sampled tokens each,
+teacher-forced through the unsteered model. Probes on the residual stream (after 12 layers per loop, end of loop 4),
+prompt-level split. A sentiment-steered-vs-unsteered probe reaches text AUC ~0.8 and is not a sentiment probe, but it
+does not transfer to other steered concepts (tense ~0.5, animals ~0.65; leave-one-concept-out 0.5-0.7), and the model's
+own surprise tracks content typicality rather than steering. No concept-general "I did not write this" signal.
+Files: `steer_detect_texts.json`, `steer_detect_results.json`, `steer_detect.ipynb`.
