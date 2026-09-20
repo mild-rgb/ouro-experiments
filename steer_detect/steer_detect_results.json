@@ -1,0 +1,321 @@
+{
+ "E1": {
+  "mid1": {
+   "held-out sentiment-steered vs unsteered": {
+    "token_auc": 0.6598210142844435,
+    "text_auc": 0.7893518518518519,
+    "text_acc": 0.7
+   },
+   "transfer -> tense-steered vs natural": {
+    "token_auc": 0.4697724039829303,
+    "text_auc": 0.4930555555555556,
+    "text_acc": 0.4583333333333333
+   },
+   "transfer -> animal-steered vs natural": {
+    "token_auc": 0.5610992571518887,
+    "text_auc": 0.6388888888888888,
+    "text_acc": 0.5
+   },
+   "same sentiment: steer_pos vs natural": {
+    "token_auc": 0.5746373297240479,
+    "text_auc": 0.6666666666666666,
+    "text_acc": 0.5833333333333334
+   },
+   "same sentiment: steer_neg vs prompt_neg": {
+    "token_auc": 0.7168241924032659,
+    "text_auc": 0.8888888888888888,
+    "text_acc": 0.75
+   }
+  },
+  "mid2": {
+   "held-out sentiment-steered vs unsteered": {
+    "token_auc": 0.6643707010748966,
+    "text_auc": 0.7789351851851852,
+    "text_acc": 0.7333333333333333
+   },
+   "transfer -> tense-steered vs natural": {
+    "token_auc": 0.49521890311364,
+    "text_auc": 0.4930555555555556,
+    "text_acc": 0.5
+   },
+   "transfer -> animal-steered vs natural": {
+    "token_auc": 0.5991524419155998,
+    "text_auc": 0.6666666666666666,
+    "text_acc": 0.5416666666666666
+   },
+   "same sentiment: steer_pos vs natural": {
+    "token_auc": 0.603620513673821,
+    "text_auc": 0.6666666666666666,
+    "text_acc": 0.625
+   },
+   "same sentiment: steer_neg vs prompt_neg": {
+    "token_auc": 0.694404508342208,
+    "text_auc": 0.8333333333333334,
+    "text_acc": 0.7916666666666666
+   }
+  },
+  "mid3": {
+   "held-out sentiment-steered vs unsteered": {
+    "token_auc": 0.6826666446858443,
+    "text_auc": 0.7986111111111112,
+    "text_acc": 0.7333333333333333
+   },
+   "transfer -> tense-steered vs natural": {
+    "token_auc": 0.48676900584795324,
+    "text_auc": 0.4652777777777778,
+    "text_acc": 0.4583333333333333
+   },
+   "transfer -> animal-steered vs natural": {
+    "token_auc": 0.5969792160581634,
+    "text_auc": 0.6666666666666666,
+    "text_acc": 0.5
+   },
+   "same sentiment: steer_pos vs natural": {
+    "token_auc": 0.6190039427519719,
+    "text_auc": 0.7083333333333334,
+    "text_acc": 0.625
+   },
+   "same sentiment: steer_neg vs prompt_neg": {
+    "token_auc": 0.7062988107916223,
+    "text_auc": 0.8402777777777778,
+    "text_acc": 0.7916666666666666
+   }
+  },
+  "mid4": {
+   "held-out sentiment-steered vs unsteered": {
+    "token_auc": 0.6912343571244826,
+    "text_auc": 0.8055555555555556,
+    "text_acc": 0.7333333333333333
+   },
+   "transfer -> tense-steered vs natural": {
+    "token_auc": 0.4785640904061957,
+    "text_auc": 0.4652777777777778,
+    "text_acc": 0.5
+   },
+   "transfer -> animal-steered vs natural": {
+    "token_auc": 0.582086691955113,
+    "text_auc": 0.6736111111111112,
+    "text_acc": 0.5833333333333334
+   },
+   "same sentiment: steer_pos vs natural": {
+    "token_auc": 0.6083708905992862,
+    "text_auc": 0.6944444444444444,
+    "text_acc": 0.625
+   },
+   "same sentiment: steer_neg vs prompt_neg": {
+    "token_auc": 0.7197106851260205,
+    "text_auc": 0.8263888888888888,
+    "text_acc": 0.75
+   }
+  },
+  "end4": {
+   "held-out sentiment-steered vs unsteered": {
+    "token_auc": 0.719437469540247,
+    "text_auc": 0.8298611111111112,
+    "text_acc": 0.7333333333333333
+   },
+   "transfer -> tense-steered vs natural": {
+    "token_auc": 0.5192053896001264,
+    "text_auc": 0.5694444444444444,
+    "text_acc": 0.4583333333333333
+   },
+   "transfer -> animal-steered vs natural": {
+    "token_auc": 0.5796842895527106,
+    "text_auc": 0.6458333333333334,
+    "text_acc": 0.5416666666666666
+   },
+   "same sentiment: steer_pos vs natural": {
+    "token_auc": 0.6744378585357638,
+    "text_auc": 0.7986111111111112,
+    "text_acc": 0.7083333333333334
+   },
+   "same sentiment: steer_neg vs prompt_neg": {
+    "token_auc": 0.7366147497337593,
+    "text_auc": 0.8402777777777778,
+    "text_acc": 0.7083333333333334
+   }
+  }
+ },
+ "E1_debiased": {
+  "mid1": {
+   "held-out sentiment-steered vs unsteered": {
+    "token_auc": 0.6619153745205862,
+    "text_auc": 0.7951388888888888,
+    "text_acc": 0.7333333333333333
+   },
+   "transfer -> tense-steered vs natural": {
+    "token_auc": 0.48679073810652757,
+    "text_auc": 0.5,
+    "text_acc": 0.5
+   },
+   "transfer -> animal-steered vs natural": {
+    "token_auc": 0.5576240714398609,
+    "text_auc": 0.6388888888888888,
+    "text_acc": 0.5416666666666666
+   },
+   "same sentiment: steer_pos vs natural": {
+    "token_auc": 0.5811105046032593,
+    "text_auc": 0.7013888888888888,
+    "text_acc": 0.625
+   },
+   "same sentiment: steer_neg vs prompt_neg": {
+    "token_auc": 0.7149316648917288,
+    "text_auc": 0.8819444444444444,
+    "text_acc": 0.7916666666666666
+   }
+  },
+  "mid2": {
+   "held-out sentiment-steered vs unsteered": {
+    "token_auc": 0.6696340776932775,
+    "text_auc": 0.7916666666666666,
+    "text_acc": 0.7166666666666667
+   },
+   "transfer -> tense-steered vs natural": {
+    "token_auc": 0.5048620989410463,
+    "text_auc": 0.5138888888888888,
+    "text_acc": 0.5
+   },
+   "transfer -> animal-steered vs natural": {
+    "token_auc": 0.6006322111585269,
+    "text_auc": 0.6666666666666666,
+    "text_acc": 0.5833333333333334
+   },
+   "same sentiment: steer_pos vs natural": {
+    "token_auc": 0.6071229274172438,
+    "text_auc": 0.6736111111111112,
+    "text_acc": 0.5833333333333334
+   },
+   "same sentiment: steer_neg vs prompt_neg": {
+    "token_auc": 0.7062677493787718,
+    "text_auc": 0.8611111111111112,
+    "text_acc": 0.7916666666666666
+   }
+  },
+  "mid3": {
+   "held-out sentiment-steered vs unsteered": {
+    "token_auc": 0.6792925884444756,
+    "text_auc": 0.8032407407407407,
+    "text_acc": 0.7666666666666667
+   },
+   "transfer -> tense-steered vs natural": {
+    "token_auc": 0.48956654022443497,
+    "text_auc": 0.4861111111111111,
+    "text_acc": 0.5
+   },
+   "transfer -> animal-steered vs natural": {
+    "token_auc": 0.5967065749960487,
+    "text_auc": 0.6736111111111112,
+    "text_acc": 0.5416666666666666
+   },
+   "same sentiment: steer_pos vs natural": {
+    "token_auc": 0.6210940274308395,
+    "text_auc": 0.7152777777777778,
+    "text_acc": 0.6666666666666666
+   },
+   "same sentiment: steer_neg vs prompt_neg": {
+    "token_auc": 0.7069178203762868,
+    "text_auc": 0.8333333333333334,
+    "text_acc": 0.8333333333333334
+   }
+  },
+  "mid4": {
+   "held-out sentiment-steered vs unsteered": {
+    "token_auc": 0.6903125363842715,
+    "text_auc": 0.8113425925925926,
+    "text_acc": 0.7666666666666667
+   },
+   "transfer -> tense-steered vs natural": {
+    "token_auc": 0.4787833886518097,
+    "text_auc": 0.4444444444444444,
+    "text_acc": 0.5
+   },
+   "transfer -> animal-steered vs natural": {
+    "token_auc": 0.5867472735893788,
+    "text_auc": 0.6666666666666666,
+    "text_acc": 0.5416666666666666
+   },
+   "same sentiment: steer_pos vs natural": {
+    "token_auc": 0.6096310290318849,
+    "text_auc": 0.7361111111111112,
+    "text_acc": 0.625
+   },
+   "same sentiment: steer_neg vs prompt_neg": {
+    "token_auc": 0.7218494852680156,
+    "text_auc": 0.8194444444444444,
+    "text_acc": 0.8333333333333334
+   }
+  }
+ },
+ "per_condition_means": {
+  "nll": {
+   "natural": 0.926789255344948,
+   "prompt_neg": 1.1969319419442925,
+   "prompt_pos": 1.0363408606284716,
+   "steer_animal": 1.0800209073439055,
+   "steer_neg": 1.1924407794418797,
+   "steer_pos": 1.0619430055958385,
+   "steer_tense": 0.9490153735182402
+  },
+  "ent": {
+   "natural": 1.7748423269192621,
+   "prompt_neg": 1.9716287389562592,
+   "prompt_pos": 1.7722395751972524,
+   "steer_animal": 1.8375544016043663,
+   "steer_neg": 1.9927777549255457,
+   "steer_pos": 1.8086337448833634,
+   "steer_tense": 1.7154330918501526
+  },
+  "kl14": {
+   "natural": 1.198913370710477,
+   "prompt_neg": 1.3848717081786364,
+   "prompt_pos": 1.0627328683740112,
+   "steer_animal": 1.162318561681368,
+   "steer_neg": 1.2569122794550573,
+   "steer_pos": 1.1373555221618026,
+   "steer_tense": 1.0810651880175657
+  },
+  "kl34": {
+   "natural": 0.039967061758784325,
+   "prompt_neg": 0.036347545453432356,
+   "prompt_pos": 0.02749347905261822,
+   "steer_animal": 0.04217372402030686,
+   "steer_neg": 0.053718863062524595,
+   "steer_pos": 0.03142166865208521,
+   "steer_tense": 0.029187853931298472
+  },
+  "gate1": {
+   "natural": 0.0223081324910288,
+   "prompt_neg": 0.017493114208739852,
+   "prompt_pos": 0.02164908413680996,
+   "steer_animal": 0.024835053195606683,
+   "steer_neg": 0.026792093252050633,
+   "steer_pos": 0.024396348505960196,
+   "steer_tense": 0.02519409871505656
+  },
+  "gate4": {
+   "natural": 0.5168029288324862,
+   "prompt_neg": 0.5195713160560872,
+   "prompt_pos": 0.5197128921747207,
+   "steer_animal": 0.5140969492547455,
+   "steer_neg": 0.5117359543290861,
+   "steer_pos": 0.5186057971653185,
+   "steer_tense": 0.5178050445651429
+  }
+ },
+ "n_tokens": 19905,
+ "n_texts": 336,
+ "test_prompts": [
+  0,
+  4,
+  8,
+  12,
+  16,
+  20,
+  24,
+  28,
+  32,
+  36,
+  40,
+  44
+ ]
+}
