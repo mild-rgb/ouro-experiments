@@ -6,7 +6,7 @@ and Contrastive Activation Addition steering with a loop sweep.
 
 - `ouro_eval.ipynb` is the full Colab notebook with outputs (includes the transformers 4.54 cache patch Ouro needs).
 - The recorded residual-stream activations (1.9 GB, `probe/after{0,6,18,24}.npy`) are not in this repo; they are in the
-  companion Hugging Face dataset: https://huggingface.co/datasets/mild-rgb/ouro-1.4b-thinking-evals (private).
+  companion Hugging Face dataset: https://huggingface.co/datasets/mild-rgb/ouro-1.4b-thinking-evals.
 - Everything else here mirrors that dataset.
 
 # Ouro-1.4B-Thinking: small eval banks + activation accounting
