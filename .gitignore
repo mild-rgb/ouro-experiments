@@ -1,3 +1,6 @@
-probe/*.npy
+02_loop_probe/*.npy
 .cache/
 __pycache__/
+08_emergent_misalignment/adapters.zip
+08_emergent_misalignment/judge_chunks/chunk_*.json
+08_emergent_misalignment/judge_chunks/med_chunk_*.json
