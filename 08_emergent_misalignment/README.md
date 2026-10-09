@@ -71,6 +71,33 @@ suggestive, n=96). This matches the phase-04 finding that later-loop injections 
 and the phase-06 answer-crystallisation curve: the loops are where a (mis)behavior gets
 committed, not just where it is stored.
 
+**Settling by loop** (`analysis/settle_by_loop.md`, added 2026-10-07): phase 03's "84% of top-1s
+are final at loop 1" is a property of maths/code text — on these open-ended answers both models
+settle only 53–64% at loop 1 (on the insecure-code adapter's code answers, ~82%). Paired on the same
+text, the med fine-tune settles later than base: 53.1% vs 56.4% at loop 1 (−3.3 pts, response-level
+bootstrap CI −4.7 to −1.9), with a loop-1 distribution further from its own final one (KL 1.86 vs
+1.33). No evidence this is specific to misaligned answers (−4.5, CI −8.4 to 0.0, 17 responses). The
+insecure-code adapter settles slightly earlier than base on its own code (+1.3 pts).
+
+**Pushed tokens** (`analysis/misaligned_tokens.md`, added 2026-10-08): in the 17 misaligned
+answers, 15.4% of tokens are ≥5x more likely under the fine-tune than base at loop 4. They are
+answer openings and stance words ("illegal", "isolate", "restricted", "control"); the harmful
+details that follow are not pushed, because given that prefix the base model predicts them too.
+The preference builds across loops (geometric mean ~2x / 9x / 49x / 56x at loops 1–4; most pushes
+first hold at loop 2 or 3) and is nearly identical in the non-misaligned answers.
+
+**Why fewer misaligned answers at 4 loops than 3?** (`analysis/loop34.md`, 2026-10-08): teacher-forcing
+the 3-loop answers through the full model shows loop 4 does not single out misaligned answers (it
+lowers their tokens by the same ~0.02 nats/token as aligned ones; difference +0.005, CI −0.011 to
++0.021) and does not pull the fine-tune toward base (KL to base's final view rises slightly). It makes
+small word-choice edits (~11% of top guesses change). So the 28% → 16% drop is either noise (one
+post-hoc p ≈ 0.04) or emerges only through compounding during free generation.
+
+**Adapter files:** in `adapters.zip`, `med_adapter/adapter_model.safetensors` is a copy of the
+insecure-code adapter (PEFT saves the default adapter at the top level); the medical adapter is
+`med_adapter/med/`. The HF dataset's `08_emergent_misalignment/med_adapter/` is the correct medical
+adapter (sha256 951eff1d…).
+
 ## Files
 
 - `em_ouro.ipynb` — the full notebook (train both adapters, evals, truncation, lens).
@@ -82,6 +109,20 @@ committed, not just where it is stored.
 - `judge_prompt.md`, `judge_chunks/*verdicts*.json` — judging spec and raw verdicts.
 - `aggregate_judges.py`, `analyze_lens.py` — local analysis (lens script:
   `python3 analyze_lens.py med_lens_rows.jsonl.gz med`).
+- `analysis/settle_by_loop.py`, `analysis/settle_by_loop.md` — per-loop settling, fine-tuned vs
+  base, with response-level bootstrap CIs (run from this directory; ~3 min).
+- `loop34_lens.ipynb`, `loop34_rows.jsonl.gz`, `analysis/loop34.py`, `analysis/loop34.md` — what loop 4
+  does to the 3-loop answers (teacher-forced through the full model, adapter on/off; 2026-10-08).
+- `analysis/misaligned_tokens.py`, `analysis/misaligned_tokens.md` — which tokens the med fine-tune
+  pushes (≥5x base) and at which loop; decoded worked examples (needs Ouro's `tokenizer.json`).
+- Figures (2026-10-08/09, run from this directory):
+  - `analysis/em_by_loop.py` → `em_by_loop.png` (coherent and misaligned rate vs loop count, base vs
+    med); `--nonempty` → `em_by_loop_nonempty.png` (empty base answers dropped); `--med-coherence` →
+    `em_coherence_med.png` (med coherence only).
+  - `analysis/tokens_by_loop.py` → `tokens_by_loop.png` (p(written token), pushed tokens, top-1
+    settling); `--settled` → `tokens_by_loop_settled.png`.
+  - `analysis/kl_by_loop.py` → `kl_ft_vs_base.png`, `kl_to_loop4.png`. `kl_by_loop.png` is an earlier
+    two-panel render of the same KL numbers.
 - `train_log.json` — part-1 training curve.
 - `adapters.zip` (**not in git**, 336 MB) — both LoRA adapters (`em_adapter`, `med_adapter`).
 - Judge inputs `judge_chunks/chunk_*.json` / `med_chunk_*.json` are derived from the eval JSONs
